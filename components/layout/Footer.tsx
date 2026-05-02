@@ -10,8 +10,8 @@ export function Footer() {
           {/* Brand Info */}
           <div className="md:col-span-5">
             <Link href="/" className="inline-flex items-center gap-2 mb-6">
-              <div className="size-6 bg-zinc-900 rounded-md flex items-center justify-center">
-                <div className="size-3 border-[1.5px] border-white rounded-full" />
+              <div className="size-6 bg-zinc-900 rounded-md flex items-center justify-center text-white font-bold text-sm">
+                K
               </div>
               <span className="font-bold text-xl tracking-tighter text-zinc-900">
                 Kyyvii Studio.

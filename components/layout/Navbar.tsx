@@ -36,8 +36,8 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <div className="size-8 bg-zinc-900 rounded-lg flex items-center justify-center">
-              <div className="size-4 border-2 border-white rounded-full" />
+            <div className="size-8 bg-zinc-900 rounded-lg flex items-center justify-center text-white font-bold text-lg">
+              K
             </div>
             <span className="font-bold text-xl tracking-tighter text-zinc-900 transition-colors group-hover:text-zinc-600">
               Kyyvii Studio.
