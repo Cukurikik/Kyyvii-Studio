@@ -3,10 +3,10 @@
 import Image from "next/image";
 
 const PORTFOLIO_IMAGES = [
-  { src: "/images/regenerated_image_1777722127337.jpg", alt: "Corporate headshot" },
-  { src: "/images/regenerated_image_1777722129581.jpg", alt: "Family portrait" },
-  { src: "/images/regenerated_image_1777722131490.jpg", alt: "Self photo session" },
-  { src: "/images/regenerated_image_1777722133170.jpg", alt: "Product photography" },
+  { src: "/images/475584756_17872730583269090_6892673863803887873_n.jpg", alt: "Corporate headshot" },
+  { src: "/images/487514090_17880649104269090_8944560476515186991_n.jpg", alt: "Family portrait" },
+  { src: "/images/488871578_17880649554269090_667863197236361231_n.jpg", alt: "Self photo session" },
+  { src: "/images/625867050_18056200880377488_2427091363379382321_n.jpg", alt: "Product photography" },
 ];
 
 export function Showcase() {
