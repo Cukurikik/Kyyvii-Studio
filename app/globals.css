@@ -1,0 +1,22 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --color-primary: #18181b; /* zinc-900 */
+  --color-primary-foreground: #ffffff;
+  --color-muted: #f4f4f5; /* zinc-100 */
+  --color-muted-foreground: #71717a; /* zinc-500 */
+}
+
+@layer utilities {
+  .grid-bg {
+    background-color: #FAFAFA;
+    background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+  
+  .glass {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+  }
+}
