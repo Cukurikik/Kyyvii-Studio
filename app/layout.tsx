@@ -1,5 +1,6 @@
 import type {Metadata} from 'next';
 import { Inter } from 'next/font/google';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import './globals.css'; // Global styles
 
 const inter = Inter({
@@ -15,7 +16,10 @@ export const metadata: Metadata = {
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang="id" className={`${inter.variable} scroll-smooth`}>
-      <body className="font-sans antialiased bg-[#FAFAFA] text-zinc-900 selection:bg-zinc-900 selection:text-white" suppressHydrationWarning>{children}</body>
+      <body className="font-sans antialiased bg-[#FAFAFA] text-zinc-900 selection:bg-zinc-900 selection:text-white" suppressHydrationWarning>
+        {children}
+        <SpeedInsights />
+      </body>
     </html>
   );
 }
