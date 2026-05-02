@@ -1,10 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import { useForm } from "react-hook-form";
+import { useForm, useWatch } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
-import { format, addDays, isWithinInterval, parse } from "date-fns";
+import { format, addDays } from "date-fns";
 import { id } from "date-fns/locale";
 import { ArrowRight, Calendar, Clock, Image as ImageIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -39,6 +39,7 @@ export function Booking() {
   const {
     register,
     handleSubmit,
+    control,
     setValue,
     watch,
     formState: { errors },
@@ -46,9 +47,9 @@ export function Booking() {
     resolver: zodResolver(bookingSchema),
   });
 
-  const selectedPackage = watch("package");
-  const selectedDate = watch("date");
-  const selectedTime = watch("time");
+  const selectedPackage = useWatch({ name: "package", control });
+  const selectedDate = useWatch({ name: "date", control });
+  const selectedTime = useWatch({ name: "time", control });
 
   const onSubmit = (data: BookingFormValues) => {
     // Format to WhatsApp API
