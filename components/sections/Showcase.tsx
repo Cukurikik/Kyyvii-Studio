@@ -1,12 +1,16 @@
 "use client";
 
 import Image from "next/image";
+import img1 from "@/public/images/regenerated_image_1777722127337.jpg";
+import img2 from "@/public/images/regenerated_image_1777722129581.jpg";
+import img3 from "@/public/images/regenerated_image_1777722131490.jpg";
+import img4 from "@/public/images/regenerated_image_1777722133170.jpg";
 
 const PORTFOLIO_IMAGES = [
-  { src: "/images/regenerated_image_1777722127337.jpg", alt: "Corporate headshot" },
-  { src: "/images/regenerated_image_1777722129581.jpg", alt: "Family portrait" },
-  { src: "/images/regenerated_image_1777722131490.jpg", alt: "Self photo session" },
-  { src: "/images/regenerated_image_1777722133170.jpg", alt: "Product photography" },
+  { src: img1, alt: "Corporate headshot" },
+  { src: img2, alt: "Family portrait" },
+  { src: img3, alt: "Self photo session" },
+  { src: img4, alt: "Product photography" },
 ];
 
 export function Showcase() {
